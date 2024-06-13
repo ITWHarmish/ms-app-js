@@ -1,0 +1,64 @@
+.style-layout {
+  padding-inline: 50px;
+}
+
+.app-layout {
+  min-height: 100vh !important;
+  .logo {
+    display: block;
+    height: 45px;
+    margin: 16px auto;
+    &.collapsed {
+      width: 20px;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+  .site-layout-background {
+    background: #fff;
+  }
+  .menu-header {
+    display: block;
+    line-height: 40px;
+    padding: 0 20px;
+    color: inherit;
+  }
+  .ant-layout-header {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-actions {
+      text-align: right;
+      a {
+        margin-left: 8px;
+      }
+    }
+    .logo {
+      margin: 0;
+    }
+  }
+  .ant-layout-content {
+    padding: 16px;
+    &-wrapper {
+      min-height: 360px;
+    }
+  }
+  .ant-layout-footer {
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .app-layout {
+    .app-header {
+      height: max-content;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .app-header-actions {
+      text-align: left;
+    }
+  }
+}

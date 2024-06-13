@@ -1,0 +1,86 @@
+#kanban {
+  padding: 0 25px;
+  touch-action: manipulation;
+}
+
+.smart-kanban-column {
+  background: #f5f5f5;
+  border-radius: 16px 16px 0px 0px;
+  padding: 10px;
+}
+
+.smart-kanban-task-description {
+  display: none;
+}
+
+.smart-kanban-column-header-label {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+.smart-kanban-task-text {
+  color: #0d062d;
+  font-size: 13px;
+}
+
+.smart-kanban-task-custom-fields {
+  flex-direction: column;
+  display: flex !important;
+}
+
+.smart-arrow-left {
+  display: none !important;
+}
+
+.smart-kanban-column-header {
+  border: none !important;
+  outline: none;
+  border-radius: 0px !important;
+}
+
+.smart-kanban-task {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.smart-kanban-title {
+  color: #0d062d;
+}
+
+.smart-kanban .smart-kanban-column>.smart-kanban-column-content.no-sub-columns {
+  margin-top: 0px !important;
+}
+
+.heading {
+  background: none !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+
+.smart-kanban .smart-kanban-scroll-viewer .smart-scroll-viewer-content-container {
+  padding: 0px !important;
+}
+
+.smart-kanban .smart-kanban-scroll-viewer {
+  padding: 4px !important;
+}
+
+.smart-kanban .smart-kanban-column-content-tasks .smart-kanban-task[focus] {
+  box-shadow: none;
+}
+
+.smart-kanban .smart-kanban-task[selected],
+.smart-kanban-task-progress-container {
+  background-color: #fff;
+}
+
+.smart-scroll-bar {
+  scroll-behavior: smooth;
+  background: #f5f5f5 !important;
+  width: 7px !important;
+}
+
+.smart-kanban .smart-kanban-column-content-tasks.empty:after {
+  content: "No Jobs";
+}

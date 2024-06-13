@@ -1,0 +1,45 @@
+.calculate-hours-card {
+  position: fixed;
+  max-width: 300px;
+  width: 100%;
+  right: -300px;
+  bottom: 30px;
+  transition: right 0.3s ease-in-out;
+  &.show-card {
+    right: 0;
+  }
+  .arrow-toggle {
+    position: absolute;
+    right: 300px;
+    bottom: 0;
+  }
+}
+
+.screenshot-drawer {
+  .ant-drawer-content-wrapper {
+    min-width: calc(100vw - 300px);
+  }
+  .ant-drawer-body {
+    padding: 0;
+  }
+}
+
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .ant-badge-status {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.notes-month section {
+  font-size: 28px;
+}

@@ -1,0 +1,34 @@
+.avatar-uploader {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  .ant-upload-select-picture-card {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  & + .profile-name {
+    text-align: center;
+    margin: 16px 0 0;
+  }
+}
+
+.justifycontent-space-between {
+  justify-content: space-between;
+}
+
+.profile-username {
+  color: #002140;
+}
